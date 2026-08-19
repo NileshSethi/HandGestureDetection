@@ -333,6 +333,6 @@ A Constituent of Symbiosis International University
 
 ---
 
-## ⭐ Acknowledgement
+##  Acknowledgement
 
 This project was developed as part of an academic study of **Sensors and Microcontrollers**, combining computer vision with embedded systems to demonstrate a practical real-time gesture recognition and communication system.
