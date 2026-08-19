@@ -6,54 +6,54 @@ The system combines **Python, OpenCV, MediaPipe, serial communication, and Ardui
 
 ---
 
-## ✨ Features
+##  Features
 
-### 🖐️ Real-Time Hand Gesture Detection
+###  Real-Time Hand Gesture Detection
 
 Uses a live camera feed to detect and track hand landmarks in real time using **MediaPipe Hands**.
 
-### 🤖 Gesture Classification
+###  Gesture Classification
 
 The system identifies predefined gestures and maps them to their corresponding meanings.
 
 Supported gestures include:
 
-* 👍 **Thumbs Up** — Good / Okay
-* 👎 **Thumbs Down** — Bad / Not Okay
-* ✌️ **Peace** — Victory / Peace
-* ✊ **Fist** — Stop / Power
-* ✋ **Palm** — Hello / Stop
-* 🤙 **Call Me** — Call Gesture / Phone
-* 👉 **Point** — Indicating / Direction
-* 🤘 **Rock** — Rock On / Energy
+*  **Thumbs Up** — Good / Okay
+*  **Thumbs Down** — Bad / Not Okay
+*  **Peace** — Victory / Peace
+*  **Fist** — Stop / Power
+*  **Palm** — Hello / Stop
+*  **Call Me** — Call Gesture / Phone
+*  **Point** — Indicating / Direction
+*  **Rock** — Rock On / Energy
 * **L Sign** — L Shape
 * **Middle Finger** — Rude Gesture
 * **Yo** — Cool / Yo
 * **Nice** — Good Job / Nice
 
-### 📺 LCD Output
+###  LCD Output
 
 The recognized gesture and its meaning are transmitted to a connected microcontroller and displayed on a **16×2 LCD screen**.
 
-### 🔌 Serial Communication
+###  Serial Communication
 
 Python communicates with the Arduino/NodeMCU using **PySerial**, allowing the detected gesture information to be transferred to the embedded system in real time.
 
-### 💻 Computer Vision Based
+###  Computer Vision Based
 
 The project uses camera-based gesture recognition instead of additional physical gesture sensors such as flex sensors or accelerometers.
 
-### ⚡ Real-Time Response
+###  Real-Time Response
 
 The system is designed for real-time interaction, with the project achieving a response time of less than one second between gesture detection and LCD display under controlled conditions.
 
-### 🌐 Offline Operation
+###  Offline Operation
 
 The core gesture recognition process does not require an internet connection, making the system suitable for local and standalone demonstrations.
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 ### Software
 
@@ -74,7 +74,7 @@ The core gesture recognition process does not require an internet connection, ma
 
 ---
 
-## ⚙️ How It Works
+##  How It Works
 
 The project follows a simple camera-to-microcontroller pipeline:
 
@@ -112,7 +112,7 @@ Gesture Meaning
 
 ---
 
-## 🚀 Getting Started
+##  Getting Started
 
 Follow these steps to run the project locally.
 
@@ -129,7 +129,7 @@ Make sure the following are installed on your system:
 
 ---
 
-## 📥 Installation
+##  Installation
 
 ### 1. Clone the Repository
 
@@ -159,7 +159,7 @@ pip install opencv-python mediapipe pyserial
 
 ---
 
-## 🔧 Hardware Setup
+##  Hardware Setup
 
 The project uses a microcontroller connected to a 16×2 LCD display.
 
@@ -176,7 +176,7 @@ For an I²C-based LCD setup, the basic connections are:
 
 ---
 
-## ▶️ Running the Project
+##  Running the Project
 
 ### Start the Python Program
 
@@ -201,7 +201,7 @@ Press **ESC** to exit the application.
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 
 A typical project structure can be organized as follows:
 
@@ -222,7 +222,7 @@ The Python application handles camera processing and gesture recognition, while 
 
 ---
 
-## 🎯 Project Objectives
+##  Project Objectives
 
 The project was developed with the following objectives:
 
@@ -235,7 +235,7 @@ The project was developed with the following objectives:
 
 ---
 
-## 📊 Results
+##  Results
 
 The system was tested with predefined hand gestures and successfully displayed their corresponding meanings on the LCD.
 
@@ -252,7 +252,7 @@ Under controlled lighting conditions, the project achieved **over 90% gesture re
 
 ---
 
-## ⚠️ Limitations
+##  Limitations
 
 Although the prototype performs effectively under suitable conditions, it has some limitations:
 
@@ -263,29 +263,29 @@ Although the prototype performs effectively under suitable conditions, it has so
 
 ---
 
-## 🔮 Future Scope
+##  Future Scope
 
 The project can be further enhanced in several ways:
 
-### 📱 Mobile and IoT Integration
+###  Mobile and IoT Integration
 
 Recognized gestures could be transmitted to a mobile application or IoT dashboard using Wi-Fi or Bluetooth.
 
-### 🔊 Voice Output
+###  Voice Output
 
 Gesture meanings could be converted into speech to improve accessibility and communication.
 
-### 🧠 Advanced Machine Learning
+###  Advanced Machine Learning
 
 More advanced machine learning models can be incorporated to recognize a larger and more complex set of gestures.
 
-### 📷 Standalone Computer Vision
+###  Standalone Computer Vision
 
 The system could be optimized for hardware such as **ESP32-CAM** to create a more compact standalone solution.
 
 ---
 
-## 💡 Applications
+##  Applications
 
 The system demonstrates potential applications in:
 
@@ -299,7 +299,7 @@ The system demonstrates potential applications in:
 
 ---
 
-## 👥 Project Team
+##  Project Team
 
 **Nilesh Sethi** — 24070122121
 **Mishti Kinker** — 24070122108
@@ -314,7 +314,7 @@ A Constituent of Symbiosis International University
 
 ---
 
-## 📚 References
+##  References
 
 1. Google Research — MediaPipe Hands: Real-Time Hand Tracking
 2. Arduino Documentation — LCD Interfacing with Arduino
@@ -323,7 +323,7 @@ A Constituent of Symbiosis International University
 
 ---
 
-## 📄 Project Information
+##  Project Information
 
 **Project Title:** Hand Gesture Detection and Displaying the Meaning on LCD Screen
 
