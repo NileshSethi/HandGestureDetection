@@ -13,7 +13,7 @@ for p in ports:
 
 try:
     print("Attempting to connect to COM6...")
-    arduino = serial.Serial('COM6', 9600, timeout=1)
+    arduino = serial.Serial('COM6', 9600, timeout=1, write_timeout=1)
     time.sleep(2)  
     print("Successfully connected to COM6")
 
@@ -21,7 +21,7 @@ try:
     print("Sent test message to Arduino")
     
 except serial.SerialException as e:
-    print(f"Error connecting to COM9: {e}")
+    print(f"Error connecting to COM6: {e}")
     print("Trying to continue without Arduino...")
     arduino = None
 
@@ -144,7 +144,7 @@ with mp_hands.Hands(max_num_hands=1,
                 current_time = time.time()
                 if current_time - last_time > delay:
                     message = f"{gesture}: {meaning}"
-                    print(f"Detected: {message}")
+                    print(f"Detected: {message}")   
                     if arduino:
                         try:
                             arduino.write((message + "\n").encode('utf-8')) 
